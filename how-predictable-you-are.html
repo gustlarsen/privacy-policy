@@ -197,21 +197,21 @@
                 <p><strong>Developer:</strong> Gustavo Larsen</p>
                 <p><strong>Contact:</strong> <a href="mailto:gustlarsen@gmail.com">gustlarsen@gmail.com</a></p>
                 <p><strong>Effective Date:</strong> November 12, 2026</p>
-                <p><strong>Last Updated:</strong> November 12, 2026</p>
+                <p><strong>Last Updated:</strong> November 14, 2026</p>
             </div>
         </header>
 
         <main>
             <div class="highlight-box">
-                <p><strong>Summary:</strong> "How Predictable You Are" is an offline casual strategy puzzle game. The application does not collect, track, transmit, share, or sell any personal information or sensitive user data. All game calculations and progress are executed and stored strictly on your local device.</p>
+                <p><strong>Summary:</strong> "How Predictable You Are" is a casual strategy puzzle game. The developer does not collect, track, transmit, share, or sell any personal information or sensitive user data. All game calculations and progress are executed and stored strictly on your local device. The application displays optional rewarded video ads and banner ads served by Google AdMob.</p>
             </div>
 
             <h2>1. Information We Collect</h2>
-            <p><strong>We collect zero personal data.</strong></p>
+            <p><strong>We collect zero personal data directly.</strong></p>
             <p>When you download and play "How Predictable You Are", we do not require you to create an account, log in, or provide any personal details (such as your name, email address, phone number, location, or contacts). The app operates completely standalone without requesting user identification.</p>
 
             <h2>2. Device Permissions Used</h2>
-            <p>The application only requests the minimum system permissions necessary to provide its core gaming experience:</p>
+            <p>The application only requests the minimum system permissions necessary to provide its gameplay and features:</p>
             <table>
                 <thead>
                     <tr>
@@ -222,20 +222,23 @@
                 </thead>
                 <tbody>
                     <tr>
+                        <td><code>android.permission.INTERNET</code></td>
+                        <td>Used by the Google Mobile Ads SDK (AdMob) to request and serve optional rewarded video ads and banner ads.</td>
+                        <td>Normal / Non-sensitive</td>
+                    </tr>
+                    <tr>
                         <td><code>android.permission.VIBRATE</code></td>
                         <td>Used exclusively to deliver tactile haptic feedback when pressing game buttons and during match outcome animations. Users can disable vibration at any time within the game settings.</td>
                         <td>Normal / Non-sensitive</td>
                     </tr>
                 </tbody>
             </table>
-            <p>The application <strong>does NOT request or use</strong>:</p>
+            <p>The application <strong>does NOT request or access</strong>:</p>
             <ul>
-                <li>Internet access (<code>android.permission.INTERNET</code> is not requested in the application manifest)</li>
-                <li>Location permissions (precise or approximate GPS)</li>
+                <li>Precise or approximate location (GPS/Network)</li>
                 <li>Camera or microphone access</li>
                 <li>Device contacts, accounts, or call logs</li>
-                <li>External file system access or media storage access</li>
-                <li>Advertising identifiers (GAID / AAID)</li>
+                <li>External file system storage or photo/media access</li>
             </ul>
 
             <h2>3. Local Data Storage & Gameplay State</h2>
@@ -248,16 +251,27 @@
             </ul>
             <p><em>All stored state is sandboxed locally on your hardware. It is never synchronized to cloud servers or transmitted outside your device.</em></p>
 
-            <h2>4. Third-Party Services & Analytics</h2>
-            <p>The application does not integrate any third-party SDKs, tracking libraries, or analytics platforms, including but not limited to:</p>
+            <h2>4. Advertising (Google AdMob)</h2>
+            <p>The application displays optional rewarded video ads (which players can choose to watch to earn in-game diamond rewards) and banner ads served by <strong>Google AdMob</strong> (Google LLC).</p>
+            <p>To serve and measure ads, prevent fraudulent activity, and comply with advertising standards, Google AdMob may automatically collect and use certain diagnostic and device data, including:</p>
+            <ul>
+                <li><strong>Advertising Identifiers:</strong> The device's Google Advertising ID (GAID / AAID).</li>
+                <li><strong>Network & Device Metrics:</strong> IP address, device model, operating system version, and mobile network carrier.</li>
+                <li><strong>Ad Interaction Metrics:</strong> Ad impressions, clicks, views, and basic interaction metrics.</li>
+            </ul>
+            <p>Google AdMob uses this information in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google Advertising Policies</a>.</p>
+            <p><strong>Developer Guarantee:</strong> The developer does not personally collect, store, access, or sell your Advertising ID, personal information, or user behavioral data.</p>
+            <p><strong>Managing Ad Preferences:</strong> You can manage or reset your Advertising ID and opt out of personalized advertising at any time through your Android device settings (<strong>Settings &gt; Google &gt; Ads</strong> or <strong>Settings &gt; Privacy &gt; Ads</strong>).</p>
+
+            <h2>5. Third-Party Services & Analytics</h2>
+            <p>Aside from Google AdMob for ad delivery, the application does not integrate any third-party tracking SDKs or analytics platforms:</p>
             <ul>
                 <li>No Google Firebase Analytics or Crashlytics</li>
-                <li>No AdMob or third-party ad networks</li>
-                <li>No Facebook/Meta SDKs</li>
-                <li>No user behavior telemetry or tracking cookies</li>
+                <li>No Facebook/Meta SDKs or pixels</li>
+                <li>No user behavior telemetry, tracking cookies, or profiling systems</li>
             </ul>
 
-            <h2>5. Data Retention & Deletion</h2>
+            <h2>6. Data Retention & Deletion</h2>
             <p>Because we do not collect or store your data on external servers, we hold no user data to retain or delete. You retain complete control over your local data:</p>
             <ul>
                 <li><strong>In-App Reset:</strong> You can clear your game scores and Markov transition history directly within the game.</li>
@@ -265,16 +279,16 @@
                 <li><strong>Uninstalling:</strong> Removing the app permanently deletes all associated local data from your device.</li>
             </ul>
 
-            <h2>6. Children’s Privacy (COPPA / GDPR-K)</h2>
-            <p>Protecting children's privacy is extremely important to us. "How Predictable You Are" does not knowingly collect or solicit any personal information from children under the age of 13 (or under the applicable age in your jurisdiction). Because the app collects no personal information whatsoever, it complies fully with the Children’s Online Privacy Protection Act (COPPA) and General Data Protection Regulation (GDPR).</p>
+            <h2>7. Children’s Privacy (COPPA / GDPR-K)</h2>
+            <p>Protecting children's privacy is extremely important to us. "How Predictable You Are" does not knowingly collect or solicit any personal information from children under the age of 13 (or under the applicable age in your jurisdiction). The developer does not collect any personal data, and advertising served via Google AdMob complies with Google Play Families policies and COPPA regulations.</p>
 
-            <h2>7. Security</h2>
-            <p>We care about safeguarding your device and experience. Because the application runs entirely offline and retains all game variables within the secure Android application sandbox, your gameplay data remains isolated from unauthorized external access.</p>
+            <h2>8. Security</h2>
+            <p>We care about safeguarding your device and experience. Because all gameplay logic and progression are retained within the secure local Android application sandbox, your gameplay data remains isolated from unauthorized external access.</p>
 
-            <h2>8. Changes to This Privacy Policy</h2>
+            <h2>9. Changes to This Privacy Policy</h2>
             <p>We may update this Privacy Policy from time to time. Any revisions will be published on this page with an updated "Last Updated" date. You are advised to review this page periodically for any changes.</p>
 
-            <h2>9. Contact Us</h2>
+            <h2>10. Contact Us</h2>
             <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or the practices of "How Predictable You Are", please contact:</p>
             <ul>
                 <li><strong>Developer:</strong> Gustavo Larsen</li>
